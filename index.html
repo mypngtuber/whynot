@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head><meta charset="UTF-8"><title>AstraCut</title><link rel="stylesheet" href="src/ui/panel.css"></head>
+<body>
+  <div id="app">
+    <header class="header"><div class="brand"><span class="brand-mark">A</span><div><h1>AstraCut</h1><p>AI EDITING ASSISTANT</p></div></div><button id="settings-button" class="icon-button" title="الإعدادات">Settings</button></header>
+    <div class="host-bar"><span>PREMIERE PRO / UXP</span><span class="tag">0.1 · ALPHA</span></div>
+    <div id="notice" class="notice" role="status">جاري الاتصال بـPremiere…</div>
+    <div class="scroll-area">
+      <section class="sequence-card"><div class="eyebrow">المشروع الحالي</div><h2 id="sequence-name">افتح Sequence داخل Premiere</h2><div id="sequence-meta" class="meta">لا توجد بيانات تجريبية</div><div class="divider"></div><div class="row"><span id="sequence-state" class="muted">بانتظار المشروع</span><button id="refresh-button" class="text-button">تحديث</button></div></section>
+      <section class="hero"><div class="eyebrow accent">AUDIO FIRST. YOUR EDIT, YOUR CALL.</div><h2>ابدأ بفكرة. اترك لنا التفاصيل.</h2><p>نفهم الكلام، نرتّب الخطة، ونحافظ على الأصل.<br>أنت صاحب القرار قبل كل تغيير.</p><button id="start-button" class="primary big">قم بمونتاج للمقطع</button><div class="hero-foot">تحليل صوتي · مراجعة أولًا · نسخة آمنة</div></section>
+      <div id="progress" class="hidden card"><div id="progress-label"></div><div class="progress-track"><div id="progress-fill"></div></div><button id="cancel-button" class="text-button">إلغاء التحليل</button></div>
+      <div id="confirmation" class="hidden card"></div>
+      <nav id="tabs" class="tabs" aria-label="أقسام الإضافة"></nav>
+      <section id="content"></section>
+    </div>
+    <footer><span id="model-label">Gemini · غير مختبر</span><span>الأصل ليس هدفًا للتعديل</span></footer>
+  </div>
+  <script src="src/plugin.js"></script>
+</body>
+</html>
