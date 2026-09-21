@@ -1,0 +1,19 @@
+{
+  "manifestVersion": 5,
+  "id": "com.astracut.premiere.direct",
+  "name": "AstraCut",
+  "version": "0.1.0",
+  "main": "index.html",
+  "host": {"app": "premierepro", "minVersion": "25.6.0"},
+  "requiredPermissions": {
+    "localFileSystem": "request",
+    "network": {"domains": ["https://generativelanguage.googleapis.com"]},
+    "launchProcess": {"schemes": ["https"], "extensions": []}
+  },
+  "entrypoints": [{
+    "type": "panel", "id": "astracut", "label": {"default": "AstraCut"},
+    "minimumSize": {"width": 340, "height": 480},
+    "preferredDockedSize": {"width": 440, "height": 780},
+    "preferredFloatingSize": {"width": 500, "height": 820}
+  }]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "astracut-premiere-uxp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Audio-first Premiere Pro UXP editing assistant — host-validation alpha",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node scripts/check.cjs",
+    "build": "npm run check && npm test && python3 scripts/package.py"
+  },
+  "engines": {"node": ">=20"}
+}
